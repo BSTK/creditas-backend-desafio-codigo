@@ -1,4 +1,4 @@
-package bstk.dev.desafiocodigo.emprestimos.utils;
+package bstk.dev.desafiocodigo.emprestimos.util;
 
 import java.math.BigDecimal;
 

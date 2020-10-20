@@ -5,7 +5,7 @@ import bstk.dev.desafiocodigo.emprestimos.api.PropostaDeEmprestimoRequest;
 
 import java.math.BigDecimal;
 
-import static bstk.dev.desafiocodigo.emprestimos.utils.Operacao.*;
+import static bstk.dev.desafiocodigo.emprestimos.util.Operacao.*;
 
 public class EmprestimoComGarantia implements PropostaEmprestimo {
 
