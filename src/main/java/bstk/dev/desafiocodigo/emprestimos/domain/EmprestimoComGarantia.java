@@ -32,12 +32,13 @@ public class EmprestimoComGarantia implements PropostaEmprestimo {
     }
 
     private boolean permiteRegraSalarioEIdade(PropostaDeEmprestimoRequest request) {
-        return maiorQue(request.getSalario(), SALARIO_5000)
+        return maiorIgual(request.getSalario(), SALARIO_5000)
             && menorQue(request.getIdade(), IDADE_PARA_EMPRESTIMO);
     }
 
     private boolean permiteRegraSalarioELocalizacao(PropostaDeEmprestimoRequest request) {
-        return menorIgual(request.getSalario(), SALARIO_5000)
+        return maiorIgual(request.getSalario(), SALARIO_3000)
+            && menorIgual(request.getSalario(), SALARIO_5000)
             && LOCALIZACAO_SP.equalsIgnoreCase(request.getLocalizacao());
     }
 

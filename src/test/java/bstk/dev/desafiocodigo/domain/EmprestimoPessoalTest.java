@@ -32,9 +32,10 @@ class EmprestimoPessoalTest {
     private static List<Arguments> propostaDeEmprestimoRequest() {
         return List.of(
             Arguments.of(new PropostaDeEmprestimoRequest(BigDecimal.valueOf(2_500L))),
-            Arguments.of(new PropostaDeEmprestimoRequest(BigDecimal.valueOf(5_500L))),
             Arguments.of(new PropostaDeEmprestimoRequest(BigDecimal.valueOf(3_000L))),
-            Arguments.of(new PropostaDeEmprestimoRequest(BigDecimal.valueOf(5_000L)))
+            Arguments.of(new PropostaDeEmprestimoRequest(BigDecimal.valueOf(3_100L))),
+            Arguments.of(new PropostaDeEmprestimoRequest(BigDecimal.valueOf(5_000L))),
+            Arguments.of(new PropostaDeEmprestimoRequest(BigDecimal.valueOf(5_500L)))
         );
     }
 

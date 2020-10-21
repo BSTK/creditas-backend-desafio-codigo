@@ -5,8 +5,7 @@ import bstk.dev.desafiocodigo.emprestimos.api.PropostaDeEmprestimoRequest;
 
 import java.math.BigDecimal;
 
-import static bstk.dev.desafiocodigo.emprestimos.util.Operacao.maiorQue;
-import static bstk.dev.desafiocodigo.emprestimos.util.Operacao.menorIgual;
+import static bstk.dev.desafiocodigo.emprestimos.util.Operacao.*;
 
 public class EmprestimoConsignado implements PropostaEmprestimo {
 
@@ -24,11 +23,11 @@ public class EmprestimoConsignado implements PropostaEmprestimo {
     }
 
     private boolean permiteEmprestimo(final BigDecimal salario) {
-        if (menorIgual(salario, SALARIO_5000)) {
+        if (menorQue(salario, SALARIO_5000)) {
             return false;
         }
 
-        return maiorQue(salario, SALARIO_5000);
+        return maiorIgual(salario, SALARIO_5000);
     }
 
 }
