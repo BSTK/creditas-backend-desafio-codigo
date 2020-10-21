@@ -4,8 +4,15 @@ https://github.com/Creditas/challenge/blob/master/backend/code-challenge/README.
 
 Aplicação desenvolvida com Spring Boot
 
+Executar projeto
+```
+./mvnw spring-boot:run
+```
+
 [POST] 
+```
 http://localhost:9090/api/v1/emprestimos/ofertar-proposta
+```
 
 [PLAYLOAD]
 ```json
