@@ -19,7 +19,7 @@ http://localhost:9090/api/v1/emprestimos/ofertar-proposta
 {
     "nome": "Bruno",
     "cpf": "123.456.789-10",
-    "idade": 30,
+    "idade": 29,
     "localizacao": "SP",
     "salario": 2900
 }
