@@ -18,9 +18,7 @@ public class EmprestimoResource {
     private EmprestimoService emprestimoService;
 
     @PostMapping("/ofertar-proposta")
-    public ResponseEntity<PropostaDeEmprestimoResponse> ofertarProposta(
-        final @RequestBody PropostaDeEmprestimoRequest request) {
-
+    public ResponseEntity<PropostaDeEmprestimoResponse> ofertarProposta(final @RequestBody PropostaDeEmprestimoRequest request) {
         final Set<EmprestimoDto> emprestimos = emprestimoService.obterPropostas(request);
         final PropostaDeEmprestimoResponse response = new PropostaDeEmprestimoResponse(emprestimos, request.getNome());
 
